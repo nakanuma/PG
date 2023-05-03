@@ -9,17 +9,22 @@ int main()
 
 	printf("[n文字後の文字を表示するプログラム]\n\n");
 
+	//無限ループ
 	while(true){
 		printf("アルファベットを入力してください。(大文字でも小文字でも可。!で終了)\n");
 		printf("アルファベット：");
         std::cin >> ch;
 
 		printf("\n(処理中)");
+
+		//3回繰り返す
 		for (int i = 0; i < 3; i++) {
-			Sleep(500);
+			Sleep(500); //0.5秒待つ
 			printf(".");
 		}
 		printf("\n\n");
+
+		//!が入力された場合、無限ループを抜ける
 		if (ch == '!') {
 			break;
 		}
@@ -30,8 +35,10 @@ int main()
 		std::cin >> n;
 
 		printf("\n(処理中)");
+
+		//3回繰り返す
 		for (int i = 0; i < 3; i++) {
-			Sleep(500);
+			Sleep(500); //0.5秒待つ
 			printf(".");
 		}
 		printf("\n\n");
@@ -48,8 +55,10 @@ int main()
 		printf("入力した文字%cの%d文字後のアルファベットは%cです。", ch, n, new_ch);
 
 		printf("\n\n\n(初期化中)");
+
+		//3回繰り返す
 		for (int i = 0; i < 3; i++) {
-			Sleep(500);
+			Sleep(500); //0.5秒待つ
 			printf(".");
 		}
 		printf("\n\n");
@@ -61,8 +70,10 @@ int main()
 	printf("プログラムを終了します\n");
 	Sleep(500);
 	printf("\n(終了処理中)");
+
+	//3回繰り返す
 	for (int i = 0; i < 3; i++) {
-		Sleep(500);
+		Sleep(500); //0.5秒待つ
 		printf(".");
 	}
 	
